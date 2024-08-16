@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Fade In/Out on Scroll</title>
+            <link href="./output.css" rel="stylesheet">
+        </head>
+        <body>
+            <!-- Navigation Bar -->
+            <nav class="p-4">
+                <div class="container mx-auto flex justify-between items-center">
+                    <a class = 'text-black'>Solomon Leo</a>
+                    <!-- Navigation Components -->
+                    <div class="flex justify-center">
+                        <div class = "flex space-x-2">
+                            <a href="./index.html" class="text-black hover:text-teal-500 px-2 py-2">Home</a>
+                            <a href="./projects.html" class="text-black hover:text-teal-500 px-2 py-2 bg-teal-100 rounded-lg">Projects</a>
+                            <a href="./contact.html" class="text-black hover:text-teal-500 px-2 py-2">Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class = 'flex'>
+                        <div class = 'flex space-x-2'>
+                            <a class = 'text-black hover:text-teal-500' target = '_blank' href = 'https://github.com/solomon-leo'>Github</a>
+                            <a class = 'text-black hover:text-teal-500' target = '_blank' href = 'https://www.linkedin.com/in/solomonleo/'>Linkedin</a>
+                        </div>
+                    </div>  
+                </div>
+            </nav>
+
+
+            <div class="h-screen flex flex-col items-center justify-center p-5">
+                <!-- Current Projects/Intro -->
+                <div class = "container-lg mx-auto text-center mb-8">
+                        <h1 class = "text-4xl font-bold">Current Projects</h1>
+                        <p class = 'text-lg'>
+                            Check out what I'm working on right now!
+                        </p>
+                </div>
+
+                <div class="flex flex-row justify-center gap-4 w-full max-w-4xl">
+
+                    <!-- Box with image and text aligned to the bottom -->
+                    <div class="relative w-1/3 aspect-[1/1] bg-[#464646] rounded-lg flex flex-col text-center">
+                        <img src="../images/ispe_logo.PNG" class="relative w-9/10 aspect-[1/1] inset-0 object-cover" alt="ISPE Logo">
+                        <p class = 'text-white p-2'>UT ISPE Website Development</p>
+                    </div>
+
+                    <!-- Box with image and text aligned to the bottom -->
+                    <div class="relative w-1/3 aspect-[1/1] bg-[#bf5700] rounded-lg flex flex-col text-center">
+                        <img src="../images/bp_rf.jpg" class="relative w-9/10 aspect-[1/1] inset-0 object-cover p-2 rounded-xl" alt="ISPE Logo">
+                        <p class = 'text-white p-2'>ML Based BP Prediction</p>
+                    </div>
+                
+                    <!-- Box with image and text aligned to the bottom -->
+                    <div class="relative w-1/3 aspect-[1/1] bg-black rounded-lg flex flex-col text-center">
+                        <img src="../images/amd_logo.png" class="relative w-9/10 aspect-[1/1] inset-0 object-cover p-2 rounded-xl" alt="ISPE Logo">
+                        <p class = 'text-white p-2'>Intern@AMD</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fade-element opacity-0 transition-opacity duration-1000 ease-in-out rounded-lg">
+                <!--About Me-->
+                <div class="container mx-auto p-5">
+                    <div class="flex justify-center items-center">
+                        <div class="flex flex-col space-y-4 max-w-4xl">
+                            <div class="h-screen flex flex-col items-center justify-center">
+                                <!-- Current Projects/Intro -->
+                                <div class = "container-lg mx-auto text-center mb-8">
+                                    <h1 class="text-4xl font-bold text-center">My Favorite Projects</h1>
+                                    <p class = 'text-lg'>
+                                        A collection of my favorite projects from my time at UT Austin and the DTU!
+                                    </p>
+                                </div>
+                
+                                <div class="flex flex-row justify-center gap-4 w-full max-w-4xl">
+                
+                                    <!-- Box with image and text aligned to the bottom -->
+                                    <div class="relative w-1/3 aspect-[1/1] bg-cyan-800 rounded-lg flex flex-col text-center">
+                                        <img src="../images/tx_grid_img.jpeg" class="relative w-9/10 aspect-[1/1] inset-0 object-cover p-2 rounded-xl" alt="ISPE Logo">
+                                        <p class = 'text-white p-2'>Analysis of the Texas Power Grid</p>
+                                    </div>
+                
+                                    <!-- Box with image and text aligned to the bottom -->
+                                    <div class="relative w-1/3 aspect-[1/1] bg-cyan-800 rounded-lg flex flex-col text-center">
+                                        <img src="../images/p2x_.png" class="relative w-9/10 aspect-[1/1] inset-0 object-cover p-2 rounded-xl" alt="ISPE Logo">
+                                        <p class = 'text-white p-2'>Designing a Carbon Neural BioFuel Plant</p>
+                                    </div>
+                                
+                                    <!-- Box with image and text aligned to the bottom -->
+                                    <div class="relative w-1/3 aspect-[1/1] bg-cyan-800 rounded-lg flex flex-col text-center">
+                                        <img src="../images/energy_island.jpeg" class="relative w-9/10 aspect-[1/1] inset-0 object-cover p-2 rounded-xl" alt="ISPE Logo">
+                                        <p class = 'text-white p-2'>Simulating an Energy Island in Python</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fade-element opacity-0 transition-opacity duration-1000 ease-in-out rounded-lg mb-12 mt-40">
+                <h1 class="text-4xl font-bold text-center">Professional Experience</h1>
+                <!-- More about me! -->
+                <div class = 'container-lg mx-auto flex flex-wrap items-center justify-center p-10'>
+                    <div class = 'space-y-4 max-w-4xl p-10'>
+                        <h2 class="text-2xl font-bold text-center">Akinwande Nano Research Group: August 2023 - Present</h2>
+                        <h3 class="text-lg font-bold text-center">Blood Pressure Prediction using Machine Learning</h3>
+                        <ul class = 'text-lg'>
+                            <li>Developed a machine learning model in Python to continuously predict blood pressure from bio-impedance signal.
+                            <li>Utilized MATLAB for continuous signal processing and feature extraction from RF signal and FFT.</li>
+                            <li>Proposed clusters based on underlying physics of fluid flow and validated my results with train, test, split.</li>
+                            <li>Evaluated multiple models using residual analysis, prediction validation, and statistical analysis of errors.</li>
+                        </ul>
+                    </div>
+
+                    <div class = 'px-5 min-w-lg'>
+                        <img src = '../images/bp_rf.jpg' class = 'rounded-lg w-full h-64 object-cover' alt = 'Solomon Leo'>
+                    </div>
+
+                    <div class = 'space-y-4 max-w-4xl p-10'>
+                        <h2  class="text-2xl font-bold text-center">Advanced Micro Devices: May 2023 - August 2023</h2>
+                        <h3 class="text-lg font-bold text-center">Product Performance Dashboard Automation using JMP and JSL</h3>
+                        <ul class = 'text-lg'>
+                            <li>Automated an internal data analysis and comparison tool and significantly enhanced its functionality using JMP.</li>
+                            <li>Implemented database integration with Snowflake and reduced report generation time by 90%.</li>
+                            <li>Developed a UI and merged it with internal tools to improve speed, convenience, and streamline user workflow.</li>
+                            <li>Used principles of modular programming to prepare for future technologies and feature extensions.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class = 'px-5 min-w-lg'>
+                        <img src = '../images/amd_logo.png' class = 'rounded-lg w-full h-64 object-cover' alt = 'Solomon Leo'>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fade-element opacity-0 transition-opacity duration-1000 ease-in-out rounded-lg mb-12 mt-40 max-w-1500">
+                <h1 class="text-4xl font-bold text-center">Project Experience</h1>
+                <!-- More about me! -->
+                <div class = 'container-lg mx-auto flex flex-wrap items-center justify-center p-10'>
+                    <div class = 'space-y-4 p-10'>
+                        <h2 class = "text-2xl font-bold text-center">The University of Texas at Austin: August 2021 - Present</h2>
+                        <ul>
+                            <li><h3><a class = 'italic hover:text-teal-500'target="_blank" href="./projects/SolomonLeo_CHE363_ASPENProj.pdf">Design of Separation Process for Hydrocarbon Mixutre using ASPEN: April 2024</a></h3>
+                                <ul>
+                                </ul>
+                            <li><h3><a class = 'italic hover:text-teal-500' target = '_blank' href = './projects/Heat Exchanger Report.pdf'>Effects of Laminar and Turbulent Flow on Convective Heat Exchange in StarCCM: November 2023</a></h3>
+                                <ul>
+                                </ul>
+                            <li><h3><a class = 'italic hover:text-teal-500' target="_blank" href="./projects/Building a Prediction Model for PM2.5 Values across the US (2).pdf">Exploration of Four Machine Learning Models in R: April 2023</a></h3>
+                                <ul class = 'list-disc list-inside'>
+                                    <li>Learned to implement train, test, split workflow and evaluate regression models in R.</li>
+                                    <li>Used k-fold cross validation to tune model paramters and prevent overfitting.</li>
+                                    <li>Performed prediction error analysis and evaluated the models on industry standard statistics.</li>
+                                </ul>
+                            <li><h3><a class = 'italic hover:text-teal-500' target="_blank" href="./projects/Texas Power Grid Reliability Project.pdf">Analysis of the Reliability of the Texas Power Grid in R: March 2023</a></h3>
+                                <ul class = 'list-disc list-inside'>
+                                    <li>Used R to conduct a data-driven analysis of the Texas power grid and provide logical improvements.</li>
+                                    <li>Applied data visualization and cleaning techniques to assess carbon output, and grid reliability.</li>
+                                    <li>Employed statistical analysis and machine learning in R to draw actionable conclusions.</li>
+                                </ul>
+                        </ul>
+
+                        <h2 class = 'pt-10 text-2xl font-bold text-center'>Technical University of Denmark: August 2022 - December 2022</h2>
+                        <ul>
+                            <li><h3><a class = 'italic hover:text-teal-500' target = '_blank' href = './projects/P2X Process Project.pdf'>Biofuel Production Process Design and Economic Analysis: November 2022</a></h3>
+                                <ul class = 'list-disc list-inside'>
+                                    <li>Developed a method of producing renewable transportation fuels from clean energy sources and hydrogen.</li>
+                                    <li>Estimated the effectiveness and feasibility of our design both physically, and financially in the European market.</li>
+                                    <li>Worked with a cross-functional international team to devlop our idea and present it at an energy showcase.</li>
+                                </ul>
+                            <li><h3><a class = 'italic hover:text-teal-500' target = '_blank' href = './projects/Thermal Energy Storage Analysis Project.pdf'>Excel Simulation of a Thermal Energy Storage: November 2022</a></h3>
+                                <ul class = 'list-disc list-inside'>
+                                    <li>Simulated a thermal energy storage, determined the optimal design, and estimated yearly efficiency.</li>
+                                    <li>Visualized energy production and storage over the year using Python.</li>
+                                    <li>Presented a report on our design's predicted performance and estimated monetary and energy savings.</li>
+                                </ul>
+                            <li><h3><a class = 'italic hover:text-teal-500' target = '_blank' href = './projects/Energy Island Analysis Project.pdf'>Python Simulation of an Energy Island: October 2022</a></h3>
+                                <ul class = 'list-disc list-inside'>
+                                    <li>Simulated and optimized a coupled set of thermal and electrical energy storage devices using Python.</li>
+                                    <li>Estimated the effectiveness and feasibility of our design both physically, and financially in the European market.</li>
+                                </ul>
+                            <li><h3><a class = 'italic hover:text-teal-500' target = '_blank' href = './projects/HPLC Analysis Project.pdf'>Implementation of HPLC for Biologic Drug Quality Analysis: October 2022</a></h3>
+                                <ul class = 'list-disc list-inside'>
+                                    <li>Researched the implementation of a new chromatography analysis tool in the production of biosimilar drugs.</li>                                    </li>
+                                    <li>Determined the financial and process related risks and benefits associated with the proposed changes to the process.</li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+              <script>
+                document.addEventListener('scroll', function() {
+                  const elements = document.querySelectorAll('.fade-element');
+                  const windowHeight = window.innerHeight;
+            
+                  elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 100;
+            
+                    if (elementTop < windowHeight - elementVisible) {
+                      element.classList.add('opacity-100');
+                      element.classList.remove('opacity-0');
+                    } else {
+                      element.classList.add('opacity-0');
+                      element.classList.remove('opacity-100');
+                    }
+                  });
+                });
+              </script>    
+        </body>
+    </html>
