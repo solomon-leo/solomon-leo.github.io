@@ -1,34 +1,100 @@
-<!DOCTYPE html>
-    <html>
-        <head>
-            <link href = './stylesheet.css' rel = 'stylesheet'>
-        </head>
-        <body>
-            <title>Solomon Leo's Portfolio</title>
-            <div id = 'menus'>
-                <ul class = 'navbar'>
-                    <li class = 'name'><a class = 'name'>Solomon Leo</a></li>
-                    <li class = 'nav active'><a href="./main.html" class = 'nav'>Home</a></li>
-                    <li class = 'nav'><a href="./about_me.html" class = 'nav'>About Me</a></li>
-                    <li class = 'nav'><a href="./projects.html" class = 'nav'>Projects</a></li>
-                    <li class = 'nav'><a href="./contact.html" class = 'nav'>Contact</a></li>
-                    <li class = 'linkedin'><a target = '_blank' href = https://github.com/solomon-leo class = linkedin>Github</a></li>
-                    <li class = 'linkedin'><a target = '_blank' href = https://www.linkedin.com/in/solomonleo/ class = linkedin>Linkedin</a></li>
-                </ul>
-            </div>
-
-            <h1>Solomon Leo</h1>
-            <div class="horizontal_line"></div>
-
-            <div class = container>
-                <div class = me>
-                    <img src = './images/imag.jpeg' height="672" width="504"/>
+<!doctype html>
+<html class = smooth-scroll>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <a class = 'text-black'>Solomon Leo</a>
+                <!-- Navigation Components -->
+                <div class="flex justify-center">
+                    <div class = "flex space-x-2">
+                        <a href="./index.html" class="text-black hover:text-teal-500 px-2 py-2 bg-teal-100 rounded-lg">Home</a>
+                        <a href="./projects.html" class="text-black hover:text-teal-500 px-2 py-2">Projects</a>
+                        <a href="./contact.html" class="text-black hover:text-teal-500 px-2 py-2">Contact</a>
+                    </div>
                 </div>
 
-                <div class = text> 
-                    <p class = 'subtitle'>Chemical Engineer and Data Scientist</p>
-                    <p class = main-text>Hello! I'm Solomon, a fourth year Chemical Engineering student at UT Austin currently interning at AMD.</p>
+                <!-- Social Media Links -->
+                <div class = 'flex'>
+                    <div class = 'flex space-x-2'>
+                        <a class = 'text-black hover:text-teal-500' target = '_blank' href = 'https://github.com/solomon-leo'>Github</a>
+                        <a class = 'text-black hover:text-teal-500' target = '_blank' href = 'https://www.linkedin.com/in/solomonleo/'>Linkedin</a>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+
+        <div class="h-screen flex items-center justify-center">
+            <!-- Introduction -->
+            <div class = 'container-lg mx-auto flex items-center justify-center'>
+                <div class = 'px-5'>
+                    <img src = '../images/imag.jpeg' class = 'rounded-lg w-full h-64 object-cover' alt = 'Solomon Leo'>
+                </div>
+
+                <div class = 'px-5'>
+                    <h1 class = 'text-4xl font-bold text-center'>Solomon Leo</h1>
+                    <p class = 'text-lg text-center'>Chemical Engineer, Data Scientist, Electrical Engineer</p>
                 </div>
             </div>
-        </body>
-    </html>
+        </div>
+        
+        <div class="fade-element opacity-0 transition-opacity duration-1000 ease-in-out rounded-lg mt-12">
+            <!--About Me-->
+            <div class="container mx-auto p-10">
+                <div class="flex justify-center items-center">
+                    <div class="flex flex-col space-y-4 max-w-4xl">
+                        <h1 class="text-4xl font-bold">Currently...</h1>
+                        <p class="text-lg">
+                            I am a Chemical Engineering student at the University of Texas at Austin. I am interested in applying data 
+                            driven solutions to engineering problems in electrical, chemical, and biomedical engineering. I am currently 
+                            interning at AMD as a Foundry Technology Operations Co-op.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fade-element opacity-0 transition-opacity duration-1000 ease-in-out rounded-lg mb-12 mt-40">
+            <!-- More about me! -->
+            <div class = 'container-lg mx-auto flex flex-wrap items-center justify-center p-10'>
+                <div class = 'space-y-4 max-w-lg mb-10'>
+                    <h1 class="text-4xl font-bold">More About Me!</h1>
+                    <p class = 'text-lg text-left'>
+                        I am also involved in undergraduate research in the Akinwande Nano Research Group at UT Austin where I work on data processing for RF sensors 
+                        and developing machine learning models to accurately predict blood pressure. You can find some of my favorite projects in the projects tab! In my free time I like 
+                        to paddleboard on the Colorado River, ski, and cook with my friends.
+                    </p>
+                </div>
+                
+                <div class = 'px-5 min-w-lg'>
+                    <img src = '../images/solomon-selfie.jpeg' class = 'rounded-lg w-full h-64 object-cover' alt = 'Solomon Leo'>
+                </div>
+            </div>
+        </div>
+        
+          <script>
+            document.addEventListener('scroll', function() {
+              const elements = document.querySelectorAll('.fade-element');
+              const windowHeight = window.innerHeight;
+        
+              elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 100;
+        
+                if (elementTop < windowHeight - elementVisible) {
+                  element.classList.add('opacity-100');
+                  element.classList.remove('opacity-0');
+                } else {
+                  element.classList.add('opacity-0');
+                  element.classList.remove('opacity-100');
+                }
+              });
+            });
+          </script>
+    </body>
+</html>
